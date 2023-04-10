@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.cities.CitiesScrollingActivity"
+    tools:showIn="@layout/activity_cities_scrolling"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:textColor="@color/cubaPurpleFirst"
+            android:id="@+id/city_scrolling_txt"
+            android:layout_margin="16dp"
+            android:textSize="16dp"
+
+           />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/city_photos"
+            style="@style/Theme.CubaTouristGuide.Font"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+
+            android:background="@color/cubaPurpleFirst"
+            android:text="@string/photos"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/city_videos"
+            style="@style/Theme.CubaTouristGuide.FontAndTextColor"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@color/cubaPurpleFirst"
+            android:text="@string/videos"
+
+            android:textColor="@color/white" />
+        />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/city_weather"
+            style="@style/Theme.CubaTouristGuide.FontAndTextColor"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@color/cubaPurpleFirst"
+            android:text="@string/weather"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

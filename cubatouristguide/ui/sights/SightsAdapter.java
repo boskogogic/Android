@@ -1,0 +1,85 @@
+package com.example.cubatouristguide.ui.sights;
+
+import android.content.Context;
+import android.content.Intent;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.cubatouristguide.R;
+import com.google.gson.Gson;
+import com.squareup.picasso.Picasso;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class SightsAdapter extends RecyclerView.Adapter<SightsAdapter.ViewHolder> {
+    private List<SightsItem> _sights = new ArrayList<SightsItem>();
+    Context context;
+
+    public interface OnItemClickListener {
+        void onItemClick(SightsItem item);
+    }
+
+    private OnItemClickListener listener;
+
+    public SightsAdapter(List<SightsItem> sights,Context context){
+        this._sights = sights;
+        this.context = context;
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
+    public int getItemCount() {
+        return _sights.size();
+    }
+
+
+    @NonNull
+    @Override
+    public SightsAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int i) {
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        View v = inflater.inflate(R.layout.sight_item, parent, false);
+        ViewHolder vh = new ViewHolder(v);
+        return vh;
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        SightsItem sight = _sights.get(position);
+        String loadedImage = sight.getImage();
+
+        Picasso.get().load(loadedImage).into(holder.img);
+        holder.img.setOnClickListener( v-> {
+            Gson gson = new Gson();
+            Intent intent = new Intent(context, SightsScrollingActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            String intentData =gson.toJson(sight);
+            intent.putExtra("markerSights",intentData);
+            context.startActivity(intent);
+        });
+        holder.name.setText(sight.getName());
+    }
+
+    public class ViewHolder extends RecyclerView.ViewHolder{
+
+        ImageView img;
+        TextView name;
+
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+            img= itemView.findViewById(R.id.sight_img);
+            name= itemView.findViewById(R.id.sight_name);
+
+        }
+    }
+}

@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">CubaTouristGuide</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Cuba Tourist Guide</string>
+    <!-- <string name="nav_header_subtitle">android.studio@android.com</string> -->
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="menu_city">Cities</string>
+    <string name="menu_sight">Sights</string>
+    <string name="menu_news">News</string>
+    <string name="menu_general">General</string>
+    <string name="menu_cuba_today">Cuba today</string>
+    <string name="menu_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="capital">Capital:</string>
+    <string name="gdp">GDP:</string>
+    <string name="population">Population:</string>
+    <string name="currency">Currency:</string>
+    <string name="area">Area:</string>
+    <string name="time_zone">Time zone:</string>
+    <string name="calling_code">Calling Code:</string>
+    <string name="demonym">Demonym:</string>
+    <string name="language">Language:</string>
+    <string name="title_activity_maps_sights">MapsSightsActivity</string>
+    <string name="title_activity_maps_cities">MapsCitiesActivity</string>
+
+    <string name="cuba_today_text_first">\nBehind the colorful landscape, beautiful women and unique buildings is the dark side of Cuba, which in most cases is neither interesting nor attractive to tourists. \n\nOne of the biggest shocks that tourists experience is when they hear how much the local population earns, for ordinary workers that amount is $20 per month, while for university-educated professions it is about $50.</string>
+
+    <string name="cuba_today_text_second">\nIn addition to the bad economic situation, there are also small things that when there are no big problems, such as the lack of medicines and toys for the youngest, and when we say lack, then we mean that the mentioned items cannot be bought.\n\nThe government of this country has recently introduced the digital currency MLC Moneda Libremente Convertible, which is used in government stores to buy food and basic necessities.</string>
+
+
+    <string name="cuba_today_text_third">\nThe arrival of COVID also meant an economic collapse for Cuba, considering that the country relies on the tourism industry, which has experienced the biggest decline in recent history.\n\n Many Cubans decide to leave the country, but it is not easy at all, considering that Cuba has visa-free access to only a few countries.</string>
+
+    <string name="photos">Photos</string>
+    <string name="videos">Videos</string>
+    <string name="fav_list">Favorite Sights</string>
+    <string name="cached">Cached</string>
+    <string name="map">Map</string>
+    <string name="error_photos">Error loading images</string>
+    <string name="error_videos">Error loading videos</string>
+    <string name="language_title">Selected language</string>
+    <string name="deleted">Deleted</string>
+    <string name="saved">Saved</string>
+    <string name="save">Save settings</string>
+    <string name="weather">Weather</string>
+
+
+    <string name="language_pref">Language</string>
+    <string name="pref_default_language">English</string>
+    <string name="pref_select_language">Select language</string>
+    <string-array name="pref_languageType_entries">
+        <item>English</item>
+        <item>Serbian</item>
+    </string-array>
+    <string-array name="pref_languageType_values">
+        <item>English</item>
+        <item>Serbian</item>
+    </string-array>
+
+    <string name="photos_header">Photos:</string>
+    <string name="photo_pref">NumberOfPhotos</string>
+    <string name="pref_select_number_of_photos_per_page">Select number of photos per page</string>
+    <string name="pref_default_number_of_photos_per_page">5</string>
+    <string-array name="pref_photoType_entries">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="pref_photoType_values">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+
+
+</resources>

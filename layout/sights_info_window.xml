@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    style="@style/CardView.Light"
+    android:elevation="3dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp">
+
+    <ImageView
+        android:id="@+id/sight_infowindow_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="photo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/example"/>
+
+    <TextView
+        android:id="@+id/sight_infowindow_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latte"
+        android:textColor="#fff"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="18dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="50dp"
+        android:orientation="horizontal"
+        >
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/favorites_button"
+            android:layout_width="22dp"
+            android:layout_height="22dp">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <Space
+            android:layout_width="3dp"
+            android:layout_height="5dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/maps_button"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:paddingLeft="50dp">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

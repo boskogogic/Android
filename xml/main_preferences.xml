@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <PreferenceCategory app:title="@string/language">
+        <ListPreference
+            android:key="@string/language_pref"
+            android:title="@string/pref_select_language"
+            android:entries="@array/pref_languageType_entries"
+            android:entryValues="@array/pref_languageType_values"
+            android:defaultValue="@string/pref_default_language"
+
+        />
+        </PreferenceCategory>
+
+
+
+        <PreferenceCategory app:title="@string/photos_header">
+        <ListPreference
+            android:key = "@string/photo_pref"
+            android:title="@string/pref_select_number_of_photos_per_page"
+            android:entries="@array/pref_photoType_entries"
+            android:entryValues="@array/pref_photoType_values"
+            android:defaultValue="@string/pref_select_number_of_photos_per_page"
+            />
+        </PreferenceCategory>
+
+        <PreferenceCategory app:title="Caching">
+
+        </PreferenceCategory>
+
+</PreferenceScreen>
